@@ -6,6 +6,7 @@ yarn-error.log*
 
 # Firebase credentials and config
 src/firebase.js
+firestore-export
 firebase.js
 .env
 .env.local
