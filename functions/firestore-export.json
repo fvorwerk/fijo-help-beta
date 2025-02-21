@@ -1,0 +1,319 @@
+{
+  "certificateRequests": [
+    {
+      "id": "4rZq96ruVpv7GoVA9xJf",
+      "userId": "atAcmgj3WYYF6Wnglre2pavixcqi",
+      "lessonInstanceId": "9D0qMtYIoYVPz83t1EiI",
+      "studentDetails": [
+        {
+          "fullName": "Test 1",
+          "dateOfBirth": "1999-11-11",
+          "gender": "Female",
+          "lessonInstance": {
+            "id": "9D0qMtYIoYVPz83t1EiI",
+            "date": "2024-10-10",
+            "time": "10:00",
+            "duration": "6",
+            "location": "Munich Training Center",
+            "certifier": "Josef Bante",
+            "expertise": "EHK",
+            "maxStudents": 0,
+            "createdOn": {
+              "_seconds": 1740060263,
+              "_nanoseconds": 623000000
+            }
+          }
+        }
+      ],
+      "timestamp": {
+        "_seconds": 1740060286,
+        "_nanoseconds": 40000000
+      },
+      "hash": "",
+      "downloadURL": "https://storage.googleapis.com/fijo-help-beta.firebasestorage.app/certificates/4rZq96ruVpv7GoVA9xJf.pdf",
+      "status": "completed"
+    },
+    {
+      "id": "MBEgPj5MB38P239qgyDG",
+      "userId": "atAcmgj3WYYF6Wnglre2pavixcqi",
+      "lessonInstanceId": "9D0qMtYIoYVPz83t1EiI",
+      "studentDetails": [
+        {
+          "fullName": "studen  d",
+          "dateOfBirth": "1989-12-10",
+          "gender": "Male",
+          "lessonInstance": {
+            "id": "9D0qMtYIoYVPz83t1EiI",
+            "date": "2024-10-10",
+            "time": "10:00",
+            "duration": "6",
+            "location": "Munich Training Center",
+            "certifier": "Josef Bante",
+            "expertise": "EHK",
+            "maxStudents": 0,
+            "createdOn": {
+              "_seconds": 1740060263,
+              "_nanoseconds": 623000000
+            }
+          }
+        }
+      ],
+      "timestamp": {
+        "_seconds": 1740061512,
+        "_nanoseconds": 64000000
+      },
+      "downloadURL": "",
+      "hash": "",
+      "errorMessage": "Lesson instance not found",
+      "status": "error"
+    },
+    {
+      "id": "MBhlCPYjnhoMmVcwkFv6",
+      "userId": "q5KurmYT37DOLt1qt5SVo8g9R8Mx",
+      "lessonInstanceId": "f2cZILl0vju5ZAKdrA8M",
+      "studentDetails": [
+        {
+          "fullName": "hhsh hhh",
+          "dateOfBirth": "1998-10-11",
+          "gender": "Male",
+          "lessonInstance": {
+            "id": "f2cZILl0vju5ZAKdrA8M",
+            "date": "2025-03-10",
+            "time": "14:00 PM",
+            "duration": "1.5 hours",
+            "location": "6cf3VHMFICYYU5pEU3Pm",
+            "certifierId": "EhaclKpVUZKZJxQaM15o",
+            "maxStudents": 25,
+            "attendingStudents": 8,
+            "createdOn": "2025-02-20T13:25:41.009Z"
+          }
+        }
+      ],
+      "timestamp": {
+        "_seconds": 1740058037,
+        "_nanoseconds": 82000000
+      },
+      "hash": "",
+      "downloadURL": "https://storage.googleapis.com/fijo-help-beta.firebasestorage.app/certificates/MBhlCPYjnhoMmVcwkFv6.pdf",
+      "status": "completed"
+    },
+    {
+      "id": "dZLLPlKYtaG9DU57iBdM",
+      "userId": "q5KurmYT37DOLt1qt5SVo8g9R8Mx",
+      "lessonInstanceId": "FGbBNp7r1JDD5SbHU4F8",
+      "studentDetails": [
+        {
+          "fullName": "Stzden 1jhh",
+          "dateOfBirth": "1999-10-10",
+          "gender": "Male",
+          "lessonInstance": {
+            "id": "FGbBNp7r1JDD5SbHU4F8",
+            "date": "2025-02-20",
+            "time": "10:00 AM",
+            "duration": "2 hours",
+            "location": "Quj0WSICkr3XfQ1X96j8",
+            "certifierId": "3jWzLS3PIZPilsGjzuVB",
+            "maxStudents": 20,
+            "attendingStudents": 5,
+            "createdOn": "2025-02-20T13:25:41.009Z"
+          }
+        }
+      ],
+      "timestamp": {
+        "_seconds": 1740060045,
+        "_nanoseconds": 229000000
+      },
+      "hash": "",
+      "downloadURL": "https://storage.googleapis.com/fijo-help-beta.firebasestorage.app/certificates/dZLLPlKYtaG9DU57iBdM.pdf",
+      "status": "completed"
+    },
+    {
+      "id": "gscfWYRc3O0w6FWDQizk",
+      "userId": "OZXh1yB2AQaSplWM2jEKsGzeQoBz",
+      "lessonInstanceId": "FGbBNp7r1JDD5SbHU4F8",
+      "studentDetails": [
+        {
+          "fullName": "Test Sudent 1",
+          "dateOfBirth": "1000-11-12",
+          "gender": "Male",
+          "lessonInstance": {
+            "id": "FGbBNp7r1JDD5SbHU4F8",
+            "date": "2025-02-20",
+            "time": "10:00 AM",
+            "duration": "2 hours",
+            "location": "Quj0WSICkr3XfQ1X96j8",
+            "certifierId": "3jWzLS3PIZPilsGjzuVB",
+            "maxStudents": 20,
+            "attendingStudents": 5,
+            "createdOn": "2025-02-20T13:25:41.009Z"
+          }
+        }
+      ],
+      "timestamp": {
+        "_seconds": 1740059357,
+        "_nanoseconds": 780000000
+      },
+      "hash": "",
+      "downloadURL": "https://storage.googleapis.com/fijo-help-beta.firebasestorage.app/certificates/gscfWYRc3O0w6FWDQizk.pdf",
+      "status": "completed"
+    }
+  ],
+  "certificates": [
+    {
+      "id": "lid1lE5MZDgaHUXXJFCj",
+      "userId": "q5KurmYT37DOLt1qt5SVo8g9R8Mx",
+      "fullName": "Student A",
+      "lessonDateTime": "2025-02-20 10:00 AM",
+      "lessonLocation": "Quj0WSICkr3XfQ1X96j8",
+      "certifierId": "3jWzLS3PIZPilsGjzuVB",
+      "signatureHash": "dummyhash1",
+      "verified": true
+    },
+    {
+      "id": "wtpPTyS4rOOtZKmD1sGu",
+      "userId": "OZXh1yB2AQaSplWM2jEKsGzeQoBz",
+      "fullName": "Student B",
+      "lessonDateTime": "2025-03-10 14:00 PM",
+      "lessonLocation": "6cf3VHMFICYYU5pEU3Pm",
+      "certifierId": "EhaclKpVUZKZJxQaM15o",
+      "signatureHash": "dummyhash2",
+      "verified": true
+    }
+  ],
+  "certifiers": [
+    {
+      "id": "2utLBE7nvLEDpM8ACDTY",
+      "gender": "Male",
+      "firstName": "Josef",
+      "lastName": "Bante",
+      "email": "heheh@hahah.com",
+      "expertise": [
+        "EHK"
+      ],
+      "createdOn": {
+        "_seconds": 1740060236,
+        "_nanoseconds": 449000000
+      }
+    },
+    {
+      "id": "3jWzLS3PIZPilsGjzuVB",
+      "firstName": "John",
+      "lastName": "Doe",
+      "email": "john.doe@example.com",
+      "expertise": [
+        "EHK"
+      ],
+      "locations": [
+        "Quj0WSICkr3XfQ1X96j8"
+      ]
+    },
+    {
+      "id": "EhaclKpVUZKZJxQaM15o",
+      "firstName": "Jane",
+      "lastName": "Smith",
+      "email": "jane.smith@example.com",
+      "expertise": [
+        "EHK"
+      ],
+      "locations": [
+        "6cf3VHMFICYYU5pEU3Pm"
+      ]
+    }
+  ],
+  "expertiseOptions": [
+    {
+      "id": "Chemistry",
+      "name": "Chemistry"
+    },
+    {
+      "id": "EHK",
+      "name": "EHK"
+    },
+    {
+      "id": "Mathematics",
+      "name": "Mathematics"
+    },
+    {
+      "id": "Physics",
+      "name": "Physics"
+    }
+  ],
+  "locations": [
+    {
+      "id": "6cf3VHMFICYYU5pEU3Pm",
+      "name": "Munich Training Center",
+      "address": "456 Central Rd, Munich",
+      "createdOn": "2025-02-20T13:25:40.905Z",
+      "certifiers": [
+        "EhaclKpVUZKZJxQaM15o"
+      ]
+    },
+    {
+      "id": "Quj0WSICkr3XfQ1X96j8",
+      "name": "Berlin Training Center",
+      "address": "123 Main St, Berlin",
+      "createdOn": "2025-02-20T13:25:40.905Z",
+      "certifiers": [
+        "3jWzLS3PIZPilsGjzuVB"
+      ]
+    }
+  ],
+  "scheduleInstances": [
+    {
+      "id": "9D0qMtYIoYVPz83t1EiI",
+      "date": "2024-10-10",
+      "time": "10:00",
+      "duration": "6",
+      "location": "Munich Training Center",
+      "certifier": "Josef Bante",
+      "expertise": "EHK",
+      "maxStudents": 0,
+      "createdOn": {
+        "_seconds": 1740060263,
+        "_nanoseconds": 623000000
+      }
+    },
+    {
+      "id": "FGbBNp7r1JDD5SbHU4F8",
+      "date": "2025-02-20",
+      "time": "10:00 AM",
+      "duration": "2 hours",
+      "location": "Quj0WSICkr3XfQ1X96j8",
+      "certifierId": "3jWzLS3PIZPilsGjzuVB",
+      "maxStudents": 20,
+      "attendingStudents": 5,
+      "createdOn": "2025-02-20T13:25:41.009Z"
+    },
+    {
+      "id": "f2cZILl0vju5ZAKdrA8M",
+      "date": "2025-03-10",
+      "time": "14:00 PM",
+      "duration": "1.5 hours",
+      "location": "6cf3VHMFICYYU5pEU3Pm",
+      "certifierId": "EhaclKpVUZKZJxQaM15o",
+      "maxStudents": 25,
+      "attendingStudents": 8,
+      "createdOn": "2025-02-20T13:25:41.009Z"
+    }
+  ],
+  "users": [
+    {
+      "id": "OZXh1yB2AQaSplWM2jEKsGzeQoBz",
+      "email": "user2@example.com",
+      "role": "customer",
+      "credits": 4
+    },
+    {
+      "id": "atAcmgj3WYYF6Wnglre2pavixcqi",
+      "email": "admin@example.com",
+      "role": "admin",
+      "credits": 9997
+    },
+    {
+      "id": "q5KurmYT37DOLt1qt5SVo8g9R8Mx",
+      "email": "user1@example.com",
+      "role": "customer",
+      "credits": 8
+    }
+  ]
+}

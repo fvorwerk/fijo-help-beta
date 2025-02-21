@@ -1,0 +1,95 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // ✅ Allow users to read their own data
+    match /users/{userId} {
+      allow read, update, write: if request.auth != null && request.auth.uid == userId;
+      allow create: if request.auth != null;
+      allow list: if request.auth != null;
+    }
+
+    // ✅ Allow listing users for admins & authenticated users
+    match /users {
+      allow list: if request.auth != null;
+    }
+
+    // ✅ Allow reading certificates, but only list ones belonging to the user
+    match /certificates/{certId} {
+      allow read: if request.auth != null;
+      allow write: if request.auth != null && request.auth.uid == request.resource.data.userId;
+    }
+
+    match /certificates {
+      allow list: if request.auth != null;
+    }
+
+    // ✅ Allow reading schedules for authenticated users
+    match /scheduleInstances/{scheduleId} {
+      allow read, update: if request.auth != null;
+      allow write: if isAdmin();
+    }
+
+    match /scheduleInstances {
+      allow list: if request.auth != null;
+    }
+
+    // ✅ Restrict admin collection to verified admins only
+    match /admin/{doc} {
+      allow read, write: if isAdmin();
+    }
+
+    // ✅ Allow managing certifiers for verified admins only
+    match /certifiers/{certifierId} {
+      allow read: if request.auth != null;
+      allow update, delete: if isAdmin();
+      allow create: if isAdmin();
+    }
+
+    match /certifiers {
+      allow list: if request.auth != null;
+    }
+
+    // ✅ Allow expertiseOptions to be read
+    match /expertiseOptions/{doc} {
+      allow read: if request.auth != null;
+    }
+
+    match /expertiseOptions {
+      allow list: if request.auth != null;
+    }
+
+    // ✅ Allow managing locations for verified admins only
+    match /locations/{locationId} {
+      allow read: if request.auth != null;  // Anyone can read
+      allow create, update, delete: if isAdmin();  // Only admins can modify
+    }
+
+    match /locations {
+      allow list: if request.auth != null;
+    }
+    
+    match /scheduleInstances/{scheduleId} {
+      allow read: if request.auth != null;
+      allow write: if request.auth.token.admin == true;
+    }
+
+    // ✅ New: Allow users to create and manage their own certificate requests
+    match /certificateRequests/{requestId} {
+      // Users can read, update, and delete their own requests
+      allow read, update, delete: if request.auth != null && request.auth.uid == resource.data.userId;
+      // Users can create their own requests but not for others
+      allow create: if request.auth != null && request.auth.uid == request.resource.data.userId;
+    }
+
+    match /certificateRequests {
+      allow list: if request.auth != null;
+    }
+
+    // ✅ Helper Function to Verify Admin Role
+    function isAdmin() {
+      return exists(/databases/$(database)/documents/users/$(request.auth.uid)) &&
+             get(/databases/$(database)/documents/users/$(request.auth.uid)).data.role == "admin";
+    }
+  }
+}
