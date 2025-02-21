@@ -5,7 +5,6 @@ import { useAuth } from '../context/AuthProvider';
 import { auth } from '../firebase';
 import Sidebar from '../components/Sidebar';
 import Footer from '../components/Footer';
-//import DashboardHome from '../pages/DashboardHome';
 import GenerateCertificate from '../pages/GenerateCertificate';
 import ManageUsers from '../pages/AdminUserManagement';
 import { FaBars, FaChevronDown, FaSignOutAlt } from 'react-icons/fa';
@@ -24,10 +23,10 @@ function DashboardV2() {
     return (
         <div className="flex h-screen bg-gray-100">
             {/* Sidebar */}
-            <Sidebar isOpen={sidebarOpen} toggleSidebar={() => setSidebarOpen(!sidebarOpen)} />
+            <Sidebar isOpen={sidebarOpen} toggleSidebar={() => setSidebarOpen(!sidebarOpen)} user={user} />
 
             {/* Main Content */}
-            <div className={`flex flex-col flex-grow transition-all duration-300 ${sidebarOpen ? 'ml-64' : 'ml-16'}`}>
+            <div className={`flex flex-col flex-grow transition-all duration-300 ${sidebarOpen ? 'ml-64' : 'ml-16'} md:ml-0`}>
                 {/* Top Navigation Bar */}
                 <nav className="fixed top-0 left-0 w-full bg-blue-900 text-white border-b border-blue-700 p-4 flex items-center justify-between z-50">
                     <div className="flex items-center space-x-4">
@@ -68,7 +67,6 @@ function DashboardV2() {
                         <Route path="generate" element={<GenerateCertificate />} />
                         <Route path="manage-users" element={<ManageUsers />} />
                     </Routes>
-
                 </main>
 
                 {/* Footer */}

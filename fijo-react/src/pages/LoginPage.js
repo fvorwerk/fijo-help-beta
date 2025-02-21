@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { auth, db } from '../firebase';
 import { signInWithEmailAndPassword, setPersistence, browserLocalPersistence } from 'firebase/auth';
 import { doc, getDoc } from 'firebase/firestore';
@@ -12,6 +12,7 @@ function LoginPage() {
   const [loading, setLoading] = useState(false);
   const [showPassword, setShowPassword] = useState(false);
   const [rememberMe, setRememberMe] = useState(false);
+  const [darkMode, setDarkMode] = useState(false);
   const navigate = useNavigate();
 
   const handleLogin = async () => {
@@ -36,7 +37,7 @@ function LoginPage() {
         const userData = userDoc.data();
         
         // Example: Redirect based on role (modify as needed)
-        navigate(userData.role === 'admin' ? '/dashboard' : '/dashboard');
+        navigate(userData.role === 'admin' ? '/dashboard3/home' : '/dashboard3/home');
       } else {
         setError('User data not found. Please contact support.');
       }
@@ -46,6 +47,21 @@ function LoginPage() {
       setLoading(false);
     }
   };
+
+  const handleKeyPress = (event) => {
+    if (event.key === 'Enter') {
+      handleLogin();
+    }
+  };
+
+  useEffect(() => {
+    document.addEventListener('keydown', handleKeyPress);
+    return () => {
+      document.removeEventListener('keydown', handleKeyPress);
+    };
+  }, [email, password, rememberMe]);
+
+ 
 
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100 dark:bg-gray-900">
@@ -97,6 +113,7 @@ function LoginPage() {
         <div className="text-center mt-3">
           <a href="/forgot-password" className="text-blue-500 text-sm hover:underline">Forgot Password?</a>
         </div>
+      
       </div>
     </div>
   );

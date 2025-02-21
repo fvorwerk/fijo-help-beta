@@ -1,11 +1,11 @@
-
 import React from 'react';
 
-function Header() {
+function Footer() {
     return (
-        <footer className="bg-gray-800 text-white p-4 text-center">&copy; 2025 Certificate System</footer>
-
+        <footer className="bg-gray-800 text-white p-4 text-center w-full">
+            &copy; 2025 Certificate System
+        </footer>
     );
 }
 
-export default Header;
+export default Footer;

@@ -49,7 +49,7 @@ function Home() {
                     {/* Generate Certificate */}
                     <div className="bg-white shadow-md p-4 rounded border border-gray-300">
                         <h3 className="text-lg font-bold flex items-center"><FaFileAlt className="mr-2" /> Generate Certificate</h3>
-                        <button onClick={() => navigate('/dashboard2/generate')} className="mt-3 px-4 py-2 bg-blue-500 text-white rounded w-full hover:bg-blue-600 transition">
+                        <button onClick={() => navigate('/dashboard3/generate')} className="mt-3 px-4 py-2 bg-blue-500 text-white rounded w-full hover:bg-blue-600 transition">
                             Generate Certificate
                         </button>
                     </div>

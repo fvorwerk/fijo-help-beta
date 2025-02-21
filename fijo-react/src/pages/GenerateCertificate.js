@@ -99,7 +99,6 @@ function GenerateCertificate() {
   };
 
   useEffect(() => {
-
     if (step === 4 && user) {
       const q = query(
         collection(db, "certificateRequests"),
@@ -120,16 +119,13 @@ function GenerateCertificate() {
     }
   }, [step, user]);
 
-
-
-
   return (
-<div className="flex flex-col flex-grow bg-gray-100 p-4 w-full min-h-screen">
-<main className="flex-grow w-full max-w-4xl mx-auto p-4">
-      <Stepper
-  currentStep={step}
-  steps={['Select Lesson Instance', 'Enter Student Details', 'Review & Edit', 'Final Confirmation', 'Processing Certificates', 'Download Certificates']}
-/>
+    <div className="flex flex-col flex-grow bg-gray-100 p-4 w-full min-h-screen">
+      <main className="flex-grow w-full max-w-4xl mx-auto p-4">
+        <Stepper
+          currentStep={step}
+          steps={['Select Lesson Instance', 'Enter Student Details', 'Review & Edit', 'Final Confirmation', 'Processing Certificates', 'Download Certificates']}
+        />
 
         {/* Step 1: Select Lesson Instance */}
         {step === 0 && (
@@ -230,8 +226,6 @@ function GenerateCertificate() {
               </p>
             </div>
 
-
-
             {/* Navigation Buttons */}
             <div className="flex justify-between mt-4">
               <button
@@ -256,22 +250,20 @@ function GenerateCertificate() {
         )}
 
         {/* Step 6: Download Certificates */}
-{step === 5 && (
-  <div className="bg-white shadow-md p-5 rounded mb-5 text-center">
-    <h3 className="text-lg font-bold mb-2">Certificate Ready for Download</h3>
-    <p>Your certificate has been generated successfully.</p>
-    <a href={downloadURL} download className="mt-4 px-4 py-2 bg-green-500 text-white rounded">
-      Download Certificate
-    </a>
-  </div>
-)}
-
-
+        {step === 5 && (
+          <div className="bg-white shadow-md p-5 rounded mb-5 text-center">
+            <h3 className="text-lg font-bold mb-2">Certificate Ready for Download</h3>
+            <p>Your certificate has been generated successfully.</p>
+            <a href={downloadURL} download className="mt-4 px-4 py-2 bg-green-500 text-white rounded">
+              Download Certificate
+            </a>
+          </div>
+        )}
       </main>
 
       <Modal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} onConfirm={modalAction === 'delete' ? confirmRemoveCertificate : null} title={modalAction === 'delete' ? 'Confirm Removal' : 'Confirm Generation'} message={modalAction === 'delete' ? 'Are you sure you want to remove this student?' : 'Proceed with generating certificates?'} confirmText={modalAction === 'delete' ? 'Remove' : 'Confirm'} cancelText="Cancel" icon={<FaExclamationTriangle />} />
     </div>
   );
- 
 }
+
 export default GenerateCertificate;

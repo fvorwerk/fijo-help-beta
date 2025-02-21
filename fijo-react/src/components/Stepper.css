@@ -1,0 +1,34 @@
+@keyframes rollIn {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes rollOut {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+}
+
+.stepper-step {
+  animation-duration: 0.3s;
+  animation-timing-function: ease-in-out;
+}
+
+.stepper-step-visible {
+  animation-name: rollIn;
+}
+
+.stepper-step-hidden {
+  animation-name: rollOut;
+}
